@@ -6,10 +6,10 @@ import * as path from 'path';
 const collectionPath = path.join(__dirname, '../collection.json');
 
 
-describe('senses-upgrades', () => {
+describe('refactor-test-schematics', () => {
   it('works', async () => {
     const runner = new SchematicTestRunner('schematics', collectionPath);
-    const tree = await runner.runSchematicAsync('senses-upgrades', {}, Tree.empty()).toPromise();
+    const tree = await runner.runSchematicAsync('refactor-test-schematics', {}, Tree.empty()).toPromise();
 
     expect(tree.files).toEqual([]);
   });
