@@ -31,16 +31,14 @@ The nice thing about schematics is that you don't need to add the dependency to 
 to upgrade, but you have to make it available. For that we have two options:
 
 - install globally, after publishing, install globally
-
-```sh
-npm i -g <your-project-name>
-```
+  ```sh
+  npm i -g <your-project-name>
+  ```
 
 - link local project, run this command inside your schematics project
-
-```sh
-npm link
-```
+  ```sh
+  npm link
+  ```
 
 > ⚠️ Don't forget to build `npm run build`
 
